@@ -11,6 +11,11 @@ dependencies = [
     "pandas>=2.2",
     "matplotlib>=3.9"
 ]
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "3sha08", email = "td8m28@gmail.com" }
+]
 [tool.setuptools.packages.find]
 where = ["src"]
 [project.optional-dependencies]
