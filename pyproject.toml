@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "insightforge"
+version = "0.1.0"
+description = "A reusable Python analytics toolkit for economic and data analysis."
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2",
+    "matplotlib>=3.9"
+]
+[tool.setuptools.packages.find]
+where = ["src"]
