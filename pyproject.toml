@@ -12,7 +12,8 @@ dependencies = [
     "matplotlib>=3.9"
 ]
 readme = "README.md"
-license = { file = "LICENSE" }
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
     { name = "3sha08", email = "td8m28@gmail.com" }
 ]
@@ -21,5 +22,6 @@ where = ["src"]
 [project.optional-dependencies]
 dev = [
     "pytest>=9.0",
-    "ruff>=0.13"
+    "ruff>=0.13",
+    "build>=1.2"
 ]
