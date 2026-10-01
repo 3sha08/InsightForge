@@ -23,5 +23,6 @@ where = ["src"]
 dev = [
     "pytest>=9.0",
     "ruff>=0.13",
-    "build>=1.2"
+    "build>=1.2",
+    "twine>=6.0"
 ]
