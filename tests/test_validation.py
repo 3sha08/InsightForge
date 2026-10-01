@@ -1,11 +1,10 @@
+import pandas as pd
+
 from insightforge.validation import (
     check_duplicates,
     check_missing_values,
     check_required_columns,
 )
-import pandas as pd
-
-from insightforge.validation import check_missing_values
 
 
 def test_check_missing_values():

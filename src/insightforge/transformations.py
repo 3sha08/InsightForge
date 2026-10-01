@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def calculate_percentage_change(series: pd.Series) -> pd.Series:
     """Return percentage change between consecutive values."""
     return series.pct_change() * 100

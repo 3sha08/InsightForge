@@ -8,7 +8,6 @@ from insightforge.validation import (
     check_missing_values,
 )
 
-
 df = pd.DataFrame(
     {
         "country": ["India", "India", "USA", "USA"],

@@ -6,6 +6,7 @@ from insightforge.indicators import (
     calculate_index,
 )
 
+
 def test_calculate_index():
     series = pd.Series([200, 220, 250])
 
