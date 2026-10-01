@@ -4,6 +4,17 @@
 
 InsightForge is a reusable Python analytics toolkit for economic and data analysis.
 
+## Installation
+
+Clone the repository and install InsightForge in editable mode:
+
+```bash
+git clone https://github.com/3sha08/InsightForge.git
+cd InsightForge
+python -m venv .venv
+python -m pip install -e ".[dev]"
+```
+
 ## Current Features
 
 - Data validation
@@ -13,11 +24,15 @@ InsightForge is a reusable Python analytics toolkit for economic and data analys
 - Data cleaning
 - Percentage-change calculations
 - Growth-rate calculations
+- Grouped growth-rate calculations
 - Aggregation
 - Correlation analysis
 - Economic index calculations
+- Grouped economic index calculations
 - Moving averages
 - CSV loading
+- Dataset profiling
+- Numeric dataset summaries
 - Basic line-chart visualization
 
 ## Development Status
