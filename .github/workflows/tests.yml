@@ -27,3 +27,9 @@ jobs:
 
       - name: Run tests
         run: python -m pytest
+
+      - name: Build package
+        run: python -m build
+
+      - name: Validate package
+        run: python -m twine check dist/*
