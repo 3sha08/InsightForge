@@ -9,3 +9,14 @@ def calculate_growth_rate(
 ) -> pd.Series:
     """Return percentage growth over the given number of periods."""
     return series.pct_change(periods=periods) * 100
+def calculate_grouped_growth_rate(
+    df: pd.DataFrame,
+    group_by: str,
+    value_column: str,
+    periods: int = 1,
+) -> pd.Series:
+    return (
+        df.groupby(group_by)[value_column]
+        .pct_change(periods=periods)
+        * 100
+    )
