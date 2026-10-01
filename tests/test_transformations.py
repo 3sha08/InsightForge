@@ -2,6 +2,7 @@ import pandas as pd
 import pytest
 
 from insightforge.transformations import (
+    calculate_cagr,
     calculate_grouped_growth_rate,
     calculate_growth_rate,
     calculate_percentage_change,
@@ -42,3 +43,20 @@ def test_calculate_grouped_growth_rate():
     assert result.iloc[1] == pytest.approx(8.57142857)
     assert pd.isna(result.iloc[2])
     assert result.iloc[3] == pytest.approx(5.55555556)
+
+def test_calculate_cagr():
+    result = calculate_cagr(
+        start_value=100,
+        end_value=121,
+        periods=2,
+    )
+
+    assert result == pytest.approx(10.0)
+
+def test_calculate_cagr_invalid_periods():
+    with pytest.raises(ValueError, match="periods must be greater than 0"):
+        calculate_cagr(
+            start_value=100,
+            end_value=121,
+            periods=0,
+        )

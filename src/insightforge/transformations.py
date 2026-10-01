@@ -21,3 +21,12 @@ def calculate_grouped_growth_rate(
         .pct_change(periods=periods)
         * 100
     )
+def calculate_cagr(
+    start_value: float,
+    end_value: float,
+    periods: int,
+) -> float:
+    if periods <= 0:
+        raise ValueError("periods must be greater than 0")
+
+    return ((end_value / start_value) ** (1 / periods) - 1) * 100

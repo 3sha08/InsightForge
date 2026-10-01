@@ -10,6 +10,7 @@ from insightforge.statistics import correlation_matrix
 from insightforge.summary import summarize_numeric
 from insightforge.timeseries import moving_average
 from insightforge.transformations import (
+    calculate_cagr,
     calculate_grouped_growth_rate,
     calculate_growth_rate,
     calculate_percentage_change,
@@ -22,6 +23,7 @@ from insightforge.validation import (
 
 __all__ = [
     "aggregate_mean",
+    "calculate_cagr",
     "calculate_grouped_growth_rate",
     "calculate_grouped_index",
     "calculate_growth_rate",
