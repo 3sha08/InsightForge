@@ -1,5 +1,7 @@
 # InsightForge
 
+[![Tests](https://github.com/3sha08/InsightForge/actions/workflows/tests.yml/badge.svg)](https://github.com/3sha08/InsightForge/actions/workflows/tests.yml)
+
 InsightForge is a reusable Python analytics toolkit for economic and data analysis.
 
 ## Current Features
