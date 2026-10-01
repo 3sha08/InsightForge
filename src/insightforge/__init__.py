@@ -5,6 +5,7 @@ from insightforge.indicators import (
     calculate_index,
 )
 from insightforge.loaders import load_csv
+from insightforge.profiling import dataset_profile
 from insightforge.statistics import correlation_matrix
 from insightforge.timeseries import moving_average
 from insightforge.transformations import (
@@ -29,6 +30,7 @@ __all__ = [
     "check_missing_values",
     "check_required_columns",
     "correlation_matrix",
+    "dataset_profile",
     "drop_missing_rows",
     "load_csv",
     "moving_average",
