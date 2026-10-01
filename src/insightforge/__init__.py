@@ -7,6 +7,7 @@ from insightforge.indicators import (
 from insightforge.loaders import load_csv
 from insightforge.profiling import dataset_profile
 from insightforge.statistics import correlation_matrix
+from insightforge.summary import summarize_numeric
 from insightforge.timeseries import moving_average
 from insightforge.transformations import (
     calculate_grouped_growth_rate,
@@ -34,6 +35,7 @@ __all__ = [
     "drop_missing_rows",
     "load_csv",
     "moving_average",
+    "summarize_numeric",
 ]
 
 __version__ = "0.1.0"
