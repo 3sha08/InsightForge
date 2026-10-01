@@ -22,7 +22,10 @@ where = ["src"]
 [project.optional-dependencies]
 dev = [
     "pytest>=9.0",
+    "pytest-cov>=7.0",
     "ruff>=0.13",
     "build>=1.2",
     "twine>=6.0"
 ]
+[tool.pytest.ini_options]
+addopts = "--cov=insightforge --cov-report=term-missing --cov-fail-under=100"
